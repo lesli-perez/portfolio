@@ -956,6 +956,7 @@ section,
 
 .about .signature .signature-image {
   max-width: 150px;
+  display: block;
 }
 
 .about .signature .signature-info h4 {
@@ -967,6 +968,7 @@ section,
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------

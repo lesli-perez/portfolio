@@ -119,21 +119,24 @@
     <!-- About Section -->
     <section id="about" class="about section light-background">
 
-<!-- Section Title --> 
-      <div class="container section-title" data-aos="fade-up"> 
-        <h2>About</h2> 
-        <div class="title-shape"> 
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg"> 
-          <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path> 
-          </svg> 
-      </div>
+      <!-- Single Container -->
+      <div class="container" data-aos="fade-up">
 
-      <!-- About Row -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h2>About</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- About Row -->
         <div class="row align-items-start mt-2 mt-lg-4">
 
           <!-- About Text -->
-          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left" data-aos-delay="300">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
             <p>Hi! I’m Lesli, a Computer Engineer who loves learning new things and creating fun projects along the way. 
             I’m curious, a little silly at times, and I enjoy tackling challenges, whether it’s building software, analyzing data, or taking apart a computer. 
             I like finding practical solutions and adding a bit of creativity where I can.</p>
@@ -141,29 +144,34 @@
             <p>When I’m not coding, I like making crafts, editing videos, practicing yoga, and running. 
             I’ve also enjoyed mentoring and leading, from being president of Tau Beta Pi to running engineering summer camps for young women. 
             For me, engineering is not just about solving problems, it’s also about sharing what I've learned and connecting with people from all walks of life.
-          </p>
+            </p>
           </div>
 
-      <!-- Image + Signature --> 
-       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-center mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200"> 
-          <div class="about-image mb-3"> 
-            <img src="assets/img/profile/lesli-grad.jpg" alt="Profile Image" class="img-fluid rounded-4"> 
-          </div> 
-
-          <div class="signature mt-3 text-center d-inline-flex align-items-center mb-1"> 
-            <div class="signature-image mb-2"> 
-              <img src="assets/img/misc/signature.png" alt="" class="img-fluid"> 
-            </div> 
+          <!-- Image + Signature -->
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
             
-            <div class="signature-info"> 
-              <h4>Lesli Perez</h4> 
-              <p>Computer Engineer | M.S. in Computer Science</p> 
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-    </div>
+            <div class="about-image mb-3">
+              <img src="assets/img/profile/lesli-grad.jpg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+
+            <div class="signature mt-1 text-center d-flex align-items-center"> <!-- changed inline-flex to flex -->
+              <div class="signature-image">
+                <img src="assets/img/misc/signature.png" alt="" class="img-fluid">
+              </div>
+
+              <div class="signature-info mt-1">
+                <h4>Lesli Perez</h4>
+                <p>Computer Engineer | M.S. in Computer Science</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
     </section>
+
     <!-- /About Section -->
 
 
@@ -227,134 +235,6 @@
     <!-- /Skills Section -->
 
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
-        </div>
-        <p>I enjoy building software, digging into data, and working with computers! I have a strong foundation in technical work, leadership, and collaboration.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-12">
-            <div class="resume-wrapper">
-              <div class="resume-block" data-aos="fade-up">
-                <h2 class="mb-5">Work Experience</h2>
-        
-                  <div class="timeline">
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-left">
-                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
-                      <span class="period"> Feb 2023 - Feb 2024, June 2024 - Dec 2025</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">System Analyst Support</h3>
-                      <ul>
-                        <li>Bash scripts and documentation to automate user account creation with secure first-login password protocols, reducing manual processing by 90%.</li>
-                        <li>Installed and updated operating systems and software for university-managed computers.</li>
-                        <li>Created network cables and verified network connections, mapped drives, and connected printers to staff computers.</li>
-                        <li>Upgraded computer systems from HDDs to SSDs, increasing performance by 2-5x and reducing downtime.</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-left">
-                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
-                      <span class="period">Sep 2023 - June 2024</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Research Assistant - MI@UTRGV</h3>
-                      <ul>
-                        <li>Analyzed AI and reinforcement learning algorithms to support innovative, data-driven projects.</li>
-                        <li>Developed and presented a research proposal on autonomous vehicles to CS professors and students.</li>
-                        <li> Implemented reinforcement learning experiments in Python to enhance recommender system performance.</li>
-                      </ul>
-                      <p></p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-left">
-                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
-                      <span class="period">May 2021 - May 2022</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Smart Technology Research Assistant - Department of Defense I-DREAM4D Consortium</h3>
-                      <ul>
-                        <li>Developed a multi-laser AM open system that integrates motion stages, sensors, and controllers.</li>
-                        <li>Added features to legacy code in VS using C# and ActiveX for the machine’s translation stages and galvo system.</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="timeline-left">
-                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
-                      <span class="period">Feb 2020 - May 2021</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Undergraduate Assistant (Front-End) - PREM</h3>
-                      <ul>
-                        <li>Enhanced UX/UI for the bilingual Energy&U website, an Emmy-winning program, reaching 20,000+ students.</li>
-                        <li>Produced bilingual (<a href="https://www.youtube.com/watch?v=VDy_bq9BfBQ">Spanish</a> and 
-                          <a href="https://www.youtube.com/watch?v=ezyZ7opFPiw&t=142s">English</a>) 
-                          videos presenting nanofiber drug delivery systems to a varied audience with over 3.1K views.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="mb-5">My Education</h2>
-
-                <div class="timeline">
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-left">
-                      <h4 class="company">University of Texas Rio Grande Valley, ABET Accredited</h4>
-                      <span class="period">Jan 2024 - Dec 2025</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Master of Science in Computer Science</h3>
-                      <p class="description">GPA: 3.70</p>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-left">
-                      <h4 class="company">University of Texas Rio Grande Valley, ABET Accredited</h4>
-                      <span class="period">Aug 2019 - Dec 2023</span>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-right">
-                      <h3 class="position">Bachelor of Science in Computer Engineering, Minor in Asian Studies</h3>
-                      <p class="description">Magna Cum Laude, GPA: 3.71 </p>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -735,8 +615,138 @@
     </section><!-- /Services Section -->
 
 
+    <!-- Resume Section -->
+    <section id="resume" class="resume section  light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>I enjoy building software, digging into data, and working with computers! I have a strong foundation in technical work, leadership, and collaboration.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2 class="mb-5">Work Experience</h2>
+        
+                  <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
+                      <span class="period"> Feb 2023 - Feb 2024, June 2024 - Dec 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">System Analyst Support</h3>
+                      <ul>
+                        <li>Bash scripts and documentation to automate user account creation with secure first-login password protocols, reducing manual processing by 90%.</li>
+                        <li>Installed and updated operating systems and software for university-managed computers.</li>
+                        <li>Created network cables and verified network connections, mapped drives, and connected printers to staff computers.</li>
+                        <li>Upgraded computer systems from HDDs to SSDs, increasing performance by 2-5x and reducing downtime.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
+                      <span class="period">Sep 2023 - June 2024</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Research Assistant - MI@UTRGV</h3>
+                      <ul>
+                        <li>Analyzed AI and reinforcement learning algorithms to support innovative, data-driven projects.</li>
+                        <li>Developed and presented a research proposal on autonomous vehicles to CS professors and students.</li>
+                        <li> Implemented reinforcement learning experiments in Python to enhance recommender system performance.</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
+                      <span class="period">May 2021 - May 2022</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Smart Technology Research Assistant - Department of Defense I-DREAM4D Consortium</h3>
+                      <ul>
+                        <li>Developed a multi-laser AM open system that integrates motion stages, sensors, and controllers.</li>
+                        <li>Added features to legacy code in VS using C# and ActiveX for the machine’s translation stages and galvo system.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-left">
+                      <h4 class="company">UTRGV College of Engineering and Computer Science</h4>
+                      <span class="period">Feb 2020 - May 2021</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Undergraduate Assistant (Front-End) - PREM</h3>
+                      <ul>
+                        <li>Enhanced UX/UI for the bilingual Energy&U website, an Emmy-winning program, reaching 20,000+ students.</li>
+                        <li>Produced bilingual (<a href="https://www.youtube.com/watch?v=VDy_bq9BfBQ">Spanish</a> and 
+                          <a href="https://www.youtube.com/watch?v=ezyZ7opFPiw&t=142s">English</a>) 
+                          videos presenting nanofiber drug delivery systems to a varied audience with over 3.1K views.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="mb-5">My Education</h2>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">University of Texas Rio Grande Valley, ABET Accredited</h4>
+                      <span class="period">Jan 2024 - Dec 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Master of Science in Computer Science</h3>
+                      <p class="description">GPA: 3.70</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">University of Texas Rio Grande Valley, ABET Accredited</h4>
+                      <span class="period">Aug 2019 - Dec 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor of Science in Computer Engineering, Minor in Asian Studies</h3>
+                      <p class="description">Magna Cum Laude, GPA: 3.71 </p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
+    <section id="contact" class="contact section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -758,13 +768,6 @@
                 </div>
 
                 <p class="mb-4">Feel free to reach out anytime, and I'll get back to you as soon as I can!</p>
-              </div>
-            </div>
-          </div>
-
-                  </div>
-                </form>
-
               </div>
             </div>
           </div>

@@ -1013,6 +1013,13 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.resume .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top:10px;
+}
+
 .resume .resume-wrapper .resume-block {
   margin-bottom: 3rem;
 }
@@ -1111,6 +1118,19 @@ section,
 
 .resume .resume-wrapper .timeline .timeline-item .timeline-right ul li {
   padding-bottom: 12px;
+}
+
+.resume .btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.resume .btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 @media (max-width: 992px) {

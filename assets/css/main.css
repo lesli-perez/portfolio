@@ -194,29 +194,38 @@ h6 {
   line-height: 0px;
 }
 
-@media (max-width: 1200px) {
-  .header {
-    padding-top: 10px;
-  }
+@media (max-width: 1199px) {
 
   .header .header-container {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px 5px 10px 15px;
+    display: flex;
+    align-items: center;
   }
 
+  /* Keep logo first */
   .header .logo {
     order: 1;
   }
 
+  /* Social icons second */
   .header .header-social-links {
     order: 2;
+    display: flex;
+    align-items: center;
   }
 
+  /* Nav (hamburger lives here) last */
   .header .navmenu {
     order: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Push hamburger to far right */
+  .mobile-nav-toggle {
+    margin-left: 12px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu

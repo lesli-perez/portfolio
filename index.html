@@ -43,8 +43,8 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Highlights</a></li>
-          <li><a href="#services">Applied Technologies</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#applied-technologies">Applied Technologies</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -54,21 +54,9 @@
       <div class="header-social-links">
         <a href="https://www.linkedin.com/in/lesli-perez/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/lesli-dani" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="lesliperezgar@gmail.com" class="email" id="copyEmail" aria-label="Copy email"><i class="bi bi-envelope"></i></a>
-        <span id="copyMsg" style="display:none; font-size: 0.8rem;">Copied!</span>
-        <script>
-          document.getElementById("copyEmail").addEventListener("click", function (e) {
-            e.preventDefault();
+        <a class="email copy-email" aria-label="Copy email"><i class="bi bi-envelope"></i></a>
+        <span class="copy-msg">Copied!</span>
 
-            const email = "lesliperezgar@gmail.com";
-
-            navigator.clipboard.writeText(email).then(() => {
-              const msg = document.getElementById("copyMsg");
-              msg.style.display = "inline";
-              setTimeout(() => msg.style.display = "none", 1500);
-            });
-          });
-        </script>
       </div>
 
     </div>
@@ -206,7 +194,7 @@
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-full">
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-full filter-apps">
               <div class="portfolio-card">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
@@ -218,9 +206,9 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>Modern Dashboard Interface</h3>
-                  <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+                  <span class="category">Mobile Application</span>
+                  <h3>Capstone Application - MicRoGV</h3>
+                  <p>A mobile app that monitors real-time solar PV performance, displaying sensor data, battery status, and irradiance for efficient energy tracking.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -328,8 +316,8 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+    <!-- Highlights Section -->
+    <section id="highlights" class="highlights section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -344,7 +332,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="testimonials-slider swiper init-swiper">
+        <div class="highlights-slider swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
               "slidesPerView": 1,
@@ -560,10 +548,10 @@
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section><!-- Highlights Section -->
     
-<!-- Services Section -->
-<section id="services" class="services section">
+<!-- Applied Technologies Section -->
+<section id="applied-technologies" class="applied-technologies section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -584,7 +572,7 @@
     <div class="row g-4 justify-content-center">
 
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-cup-hot-fill icon"></i>
           <h3>Java</h3>
           <ul>
@@ -593,10 +581,10 @@
             <li>Software Engineering II final project - Coffee Brew App.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
 
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-code-slash icon"></i>
           <h3>Python</h3>
           <ul>
@@ -605,12 +593,12 @@
             <li>ML sentiment prediction - Coffee Rating Predictor.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
 
 
 
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-display icon"></i>
           <h3>HTML & CSS</h3>
           <ul>
@@ -618,10 +606,10 @@
             <li>UI layout for web and mobile apps.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
 
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-terminal-fill icon"></i>
           <h3>Bash</h3>
           <ul>
@@ -629,9 +617,9 @@
             <li>Reduced manual admin work by 90%.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-git icon"></i>
           <h3>Git & GitHub</h3>
           <ul>
@@ -639,9 +627,9 @@
             <li>Collaborated on code using branches, pull requests, and merges.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
       <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
+        <div class="technology-item">
           <i class="bi bi-diagram-3 icon"></i>
           <h3>Design & Project Tools</h3>
           <ul>
@@ -650,7 +638,7 @@
             <li>Managed tasks, sprints, and project progress with Jira & Asana for various projects.</li>
           </ul>
         </div>
-      </div><!-- End Service Item -->
+      </div><!-- End Technology Item -->
 
     </div>
 
@@ -658,7 +646,7 @@
 
   </div>
 
-</section><!-- /Services Section -->
+</section><!-- /Applied Technologies Section -->
 
 
     <!-- Resume Section -->
@@ -807,17 +795,20 @@
           <div class="col-lg-6">
             <div class="content" data-aos="fade-up" data-aos-delay="200">
               <h2 class="display-5 mb-4">Contact</h2>
-              <p class="mb-4">Thanks for visiting my portfolio! If you have an opportunity, project idea, or just want to say hi, I'd love to hear from you.</p>
+              <p class="mb-3">Thanks for visiting my portfolio! If you have an opportunity, project idea, or just want to say hi, I'd love to hear from you.</p>
+              <p style="font-size: smaller; color: #c72b6c;">Click on my email or phone number to copy.</p>
 
-              <div class="contact-info mt-5">
+              <div class="contact-info mt-4">
                 <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope me-3"></i>
-                  <span>lesliperezgar@gmail.com</span>
+                  
+                  <a class="link copy-email"> <i class="bi bi-envelope me-3"></i> lesliperezgar@gmail.com</a>
+                  <span class="copy-msg">Copied!</span>
                 </div>
 
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-telephone me-3"></i>
-                  <span>+1 (956) 996-0410</span>
+                <div class="info-item d-flex mb-4">
+                  
+                  <a  class="link copy-phone"><i class="bi bi-telephone me-3"></i> +1 (956) 996-0410</a>
+                  <span class="copy-msg">Copied!</span>
                 </div>
 
                 <p class="mb-4">Feel free to reach out anytime, and I'll get back to you as soon as I can!</p>
@@ -839,21 +830,8 @@
       <div class="social-links d-flex justify-content-center">
         <a href="https://www.linkedin.com/in/lesli-perez/" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/lesli-dani" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="lesliperezgar@gmail.com" id="copyEmail" aria-label="Copy email"><i class="bi bi-envelope"></i></a>
-        <span id="copyMsg" style="display:none; font-size: 0.8rem;">Copied!</span>
-        <script>
-          document.getElementById("copyEmail").addEventListener("click", function (e) {
-            e.preventDefault();
-
-            const email = "lesliperezgar@gmail.com";
-
-            navigator.clipboard.writeText(email).then(() => {
-              const msg = document.getElementById("copyMsg");
-              msg.style.display = "inline";
-              setTimeout(() => msg.style.display = "none", 1500);
-            });
-          });
-        </script>
+        <a class="email copy-email" aria-label="Copy email"><i class="bi bi-envelope"></i></a>
+        <span class = "copy-msg" >Copied!</span>
 
 
       </div>

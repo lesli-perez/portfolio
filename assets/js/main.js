@@ -217,6 +217,38 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+
+  // copy email address
+  let copybuttons = document.querySelectorAll(".copy-email");
+
+  copybuttons.forEach(button => {
+    button.addEventListener("click", () => {
+      navigator.clipboard.writeText("lesliperezgar@gmail.com");
+
+      const msg = button.nextElementSibling;
+      msg.style.display = "flex";
+
+      setTimeout(() => {
+        msg.style.display = "none";
+      }, 1500);
+    });
+  });
+
+    // copy phone number
+    let copyphone = document.querySelectorAll(".copy-phone");
+
+    copyphone.forEach(phone => {
+      phone.addEventListener("click", () => {
+        navigator.clipboard.writeText("+1 (956) 996-0410");
+
+        const msg = phone.nextElementSibling;
+        msg.style.display = "flex";
+
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 1500);
+      });
+    });
+
 
 })();

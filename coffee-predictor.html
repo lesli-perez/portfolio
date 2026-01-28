@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Capstone Application</title>
+  <title>Coffee Rating Predictor</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -78,14 +78,18 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html#hero"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item active current">Capstone Application</li>
+            <li class="breadcrumb-item active current">Coffee Rating Predictor</li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
-        <h1>Capstone Project - MicRoGV Application</h1>
-        <p>A mobile app that monitors real-time solar PV performance, displaying sensor data, battery status, and irradiance for efficient energy tracking.</p>
+        <h1>Coffee Rating Predictor</h1>
+        <p>As part of my graduate Data Mining course, I worked with my team, The Roasters, to build a machine
+          learning model that predicts whether a coffee review reflects an "Outstanding" or "Average" coffee experience. We
+          aimed to provide insights for coffee roasters and consumers by analyzing hundreds of real-world coffee
+          reviews and identifying patterns in flavor, aroma, and overall sentiment.
+        </p>
       </div>
     </div><!-- End Page Title -->
 
@@ -97,37 +101,30 @@
         <div class="row gy-4 g-lg-5">
           <div class="col-lg-6">
             <figure class="mb-4">
-              <img src="assets/img/portfolio-pages/capstone/outages-pv-system.png" class="img-fluid" alt="PV System and Texas Outage Map">
-              <figcaption class="text-center small text-muted">Illustration of a PV system installed on a roof on the left, next to a map of the Texas power outages on February 16, 2021, on the right.</figcaption>
+              <img src="assets/img/portfolio-pages/coffee-predictor/predictor-cover.png" class="img-fluid" alt="PV System and Texas Outage Map">
+              <figcaption class="text-center small text-muted">Team logo, designed by me.</figcaption>
             </figure>
             
             <figure class="mb-4">
-              <img src="assets/img/portfolio-pages/capstone/figma.png" class="img-fluid" alt="Figma Design">
-              <figcaption class="text-center small text-muted">Figma design of the app showing the splash screen (logo
-                designed by me), system status screen, and a conceptual screen showing the irradiance graph.
+              <img src="assets/img/portfolio-pages/coffee-predictor/word-clouds.png" class="img-fluid" alt="Figma Design">
+              <figcaption class="text-center small text-muted">Word clouds showing the most common positive words (top-left) and
+                negative words (bottom-right) in the coffee reviews.
               </figcaption>
             </figure>
 
             <figure class="mb-4">
-              <img src="assets/img/portfolio-pages/capstone/final-app-flowchart.png" class="img-fluid" alt="Figma Design">
-              <figcaption class="text-center small text-muted">In order: App flowchart created on miro, final iteration of the splash
-                screen, and system status screen.
+              <img src="assets/img/portfolio-pages/coffee-predictor/top-roasters-matrix.png" class="img-fluid" alt="Figma Design">
+              <figcaption class="text-center small text-muted">Confusion matrix results (top-left) and frequency of top roasters by
+                class (Class 0 = Average, Class 1 = Outstanding) (bottom-right).
               </figcaption>
             </figure>
 
             <figure class="mb-4">
-              <img src="assets/img/portfolio-pages/capstone/first-iteration-app.png" class="img-fluid" alt="Figma Design">
-              <figcaption class="text-center small text-muted">First iteration of the app, featuring a scrollable screen with live temperature 
-                readings from the Arduino.
+              <img src="assets/img/portfolio-pages/coffee-predictor/common-words.png" class="img-fluid" alt="Figma Design">
+              <figcaption class="text-center small text-muted">Frequency distribution of the most common words in coffee reviews.
               </figcaption>
             </figure>
 
-            <figure class="mb-4">
-              <img src="assets/img/portfolio-pages/capstone/serial-monitor-arduino.png" class="img-fluid" alt="Figma Design">
-              <figcaption class="text-center small text-muted">Top: Arduino and breadboard with Bluetooth and temperature sensors. Bottom: 
-                Serial Monitor showing PWM, voltage, current, and power.
-              </figcaption>
-            </figure>
 
           </div>
 
@@ -135,49 +132,44 @@
 
             <div class="position-sticky" style="top: 40px">
               <div class="portfolio-description">
-                <h2>MPPT Energy System Mobile App Details</h2>
+                <h2>Coffee Rating Predictor Details</h2>
                 <p>
-                  My team, MicRoGV, developed an energy management system for a solar photovoltaic (PV) setup to address the
-                  growing need for reliable and accessible energy monitoring, especially in the wake of events like the 
-                  <a target="_blank"  href="https://en.wikipedia.org/wiki/2021_Texas_power_crisis">2021 Texas power
-                  crisis</a>, which left many families, including my own, without electricity for several days. This experience highlighted
-                  the importance of having systems that can provide real-time information about energy generation, storage, and usage.
-                  While the hardware consisted of PV panels, Arduino microcontrollers, and sensors for voltage, current, temperature,
-                  and irradiance, my primary contribution was the mobile application, which acts as the main interface for monitoring
-                  the solar PV system and turning complex energy data into clear, readable data.
+                  We began by preprocessing 300 coffee reviews to ensure data quality. Null values, punctuation, and custom stopwords
+                  such as "cup" and "notes" were removed, and categorical variables such as roaster, roast, and origin were converted
+                  into dummy variables. For feature engineering, we created a sentiment column using NLTK's SentimentIntensityAnalyzer combined with positive
+                  and negative word lists derived from the dataset. This allowed our model to capture nuanced language patterns in
+                  coffee reviews. We visualized the data using bar charts and word clouds for the top 20 most common positive and negative words,
+                  highlighting trends in consumer preferences.
                 </p>
                 <p>
-                  The mobile application connects to the system via Bluetooth (HC-06 transceiver), automatically pairing with the device
-                  when permissions are granted, and displays live data from the Arduino. Users can view voltage, current, battery
-                  status, temperature, and total output. The app also integrates external APIs for
-                  <a target="_blank" href="https://api.sunrise-sunset.org/json?lat=25.901747&lng=-97.497482&date=today">
-                    sunrise, sunset</a>, and
-                  <a target="_blank" 
-                    href="https://api.solcast.com.au/world_radiation/estimated_actuals?latitude=25.893907&longitude=-97.48691&output_parameters=ghi&format=json&api_key=Azvpit04Ws4BuY5jI8_4l-3KcGPJ-BGi&timezone=America%2FChicago">
-                    irradiance data</a>,
-                  enabling it to calculate estimated system shut-off and start-up times.
+                  The model itself is a Gaussian Naive Bayes classifier trained on the preprocessed dataset, achieving 83% accuracy when
+                  predicting positive, "Outstanding", reviews. We validated the model using F1 scores and confusion matrices to ensure
+                  balanced performance across classes. Finally, the model was applied to a separate test dataset, and predictions were
+                  exported as a CSV for downstream analysis.
                 </p>
 
                 <div class="highlight-item mt-5">
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>The state’s tally currently stands at 151 deaths...we estimate that 700 people were killed by the storm during the week with the worst power outages.</span>
+                    <span>As a Coffee Roaster, the outcome of specific descriptive words can inform marketing strategies...[and] a
+                      product development opportunity could be the introduction of star, jasmine-like flavors in future coffee options.
+                    </span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                   <div>
-                    <h3>BuzzFeed News</h3>
+                    <h3>The Roasters Team</h3>
                     <h4 class = "contact">
-                      <a class="link mb-4 d-inline-block" href="https://www.buzzfeednews.com/article/peteraldhous/texas-winter-storm-power-outage-death-toll" target="_blank">
-                        The Texas Winter Storm And Power Outages Killed Hundreds More People Than The State Says
+                      <a class="link mb-4 d-inline-block" href="assets/img/portfolio-pages/coffee-predictor/Coffee Predictor Report.pdf" target="_blank">
+                        Data Mining Final Project Report
                       </a>
                       </h4>
                   </div>
                 </div>
 
                 <p>
-                  Built with Java and Android Studio, the mobile app combines usability and clarity to let users monitor and manage
-                  their solar PV system from anywhere. This project demonstrates how renewable energy technology and mobile app
-                  development can provide practical, reliable solutions during energy emergencies like the Texas power crisis.
+                  The model effectively identifies patterns in coffee reviews that differentiate highly-rated products from average
+                  ones, providing important insights for both roasters and consumers. By analyzing language trends, the project
+                  highlights which descriptors and flavors are most associated with positive reviews.
                 </p>
 
               </div>
@@ -185,12 +177,14 @@
               <div class="portfolio-info mt-5">
                 <h3>Project information</h3>
                 <ul>
-                  <li><strong>Category</strong> App Development</li>
-                  <li><strong>Technologies</strong> Java, Android Studio, XML, Arduino, Bluetooth, APIs</li>
-                  <li><strong>Skills</strong> Mobile App Development, IoT, UI/UX, Real-Time Monitoring</li>
-                  <li><strong>Project date</strong> August 2022 - May 2023</li>
-                  <li><strong>Final Report</strong> <a target="_blank" href="assets/img/portfolio-pages/capstone/Final Capstone Report.pdf">Final Report Download</a></li>
-                  <li><strong>Project URL</strong> <a target="_blank" href="https://github.com/lesli-perez/SD_Application">GitHub Link</a></li>
+                  <li><strong>Category</strong>Data Science</li>
+                  <li><strong>Technologies</strong>Python, Jupyter Notebook, Pandas, Scikit-learn, NLTK, Matplotlib, WordCloud</li>
+                  <li><strong>Skills</strong>ETL (Extract, Transform, Load), Feature engineering, Text mining and natural language
+                    processing (NLP), Sentiment analysis, Exploratory data analysis (EDA), Data visualization, Machine learning model
+                    building and evaluation, Cross-validation and performance metrics</li>
+                  <li><strong>Project date</strong> April 2024 - May 2024</li>
+                  <li><strong>Final Report</strong> <a target="_blank" href="assets/img/portfolio-pages/coffee-predictor/Coffee Predictor Report.pdf">Final Report Download</a></li>
+                  <li><strong>Project URL</strong> <a target="_blank" href="https://github.com/lesli-perez/coffee-predictor">GitHub Link</a></li>
                 </ul>
               </div>
             </div>
